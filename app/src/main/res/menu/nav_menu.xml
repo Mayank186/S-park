@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_account"
+        android:title="Account"/>
+    <item android:id="@+id/googlePay"
+        android:title="Add GooglePay"/>
+    <item android:title="History"
+        android:id="@+id/nav_history"/>
+    <item android:title="Log Out"
+        android:id="@+id/nav_logout"/>
+</menu>

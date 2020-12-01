@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".MapActivity"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationY="-18dp"
+        android:src="@drawable/ic_pin"/>
+    <RelativeLayout
+        android:id="@+id/included_map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/map_toolbar" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/search_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="70dp"
+        android:padding="6dp"
+        android:alpha="0.65"
+        android:src="@drawable/ic_my_location_black_24dp"
+        android:background="@drawable/round_white_background"
+        android:elevation="5dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        android:elevation="10dp"
+        android:id="@+id/search_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/included_map_layout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search_background"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:imeOptions="actionSearch"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:id="@+id/search_auto"
+            android:layout_width="280dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search here"
+            android:background="#FFE4E4"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp" />
+    </LinearLayout>
+</RelativeLayout>
+

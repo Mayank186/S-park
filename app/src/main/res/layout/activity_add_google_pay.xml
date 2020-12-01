@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/googlepay"
+    tools:context=".AddGooglePayActivity">
+
+    <EditText
+        android:id="@+id/editTextAddGoogleID"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="Enter GooglePAYID"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textViewButtonAddGoogleID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textViewButtonAddGoogleID"
+        android:layout_width="143dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="570dp"
+        android:background="#2196F3"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAddGoogleID"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
